@@ -39,10 +39,25 @@ export default function Philosophy() {
   return (
     <section id="work" ref={container} className="relative py-32 px-8 md:px-16 bg-deep-walnut overflow-hidden flex flex-col items-center justify-center min-h-[70vh]">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1546250669-e3111ff6601b?auto=format&fit=crop&q=80&w=2000" 
-          alt="Wood Grain Texture" 
-          className="parallax-bg w-full h-[120%] object-cover opacity-10 absolute -top-10"
+        <div
+          aria-hidden="true"
+          className="parallax-bg absolute -top-10 h-[120%] w-full opacity-25"
+          style={{
+            backgroundImage: `
+              radial-gradient(circle at 20% 30%, rgba(214, 171, 120, 0.08), transparent 30%),
+              radial-gradient(circle at 80% 65%, rgba(214, 171, 120, 0.06), transparent 28%),
+              repeating-linear-gradient(
+                96deg,
+                rgba(255, 255, 255, 0.02) 0px,
+                rgba(255, 255, 255, 0.02) 2px,
+                rgba(58, 39, 28, 0.16) 10px,
+                rgba(58, 39, 28, 0.16) 22px
+              ),
+              linear-gradient(180deg, rgba(16, 10, 8, 0.15), rgba(16, 10, 8, 0.5))
+            `,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
         />
       </div>
 
