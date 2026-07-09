@@ -31,14 +31,18 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-3xl hero-content text-shadow-premium">
-        <h1 className="flex flex-col gap-2 mb-6">
+        <h1 className="hero-text mb-4 font-sans font-semibold uppercase tracking-[0.18em] text-5xl md:text-7xl lg:text-8xl text-sanded-timber">
+          woodWORK
+        </h1>
+
+        <div className="flex flex-col gap-2 mb-6">
           <span className="hero-text font-sans font-bold text-4xl md:text-5xl tracking-tight text-sanded-timber">
             Bespoke joinery
           </span>
           <span className="hero-text font-drama italic text-6xl md:text-8xl text-brass leading-none">
             crafted to fit.
           </span>
-        </h1>
+        </div>
         
         <p className="hero-text font-sans text-lg md:text-xl text-soft-stone/80 max-w-xl mb-10 leading-relaxed">
           Precision-made fitted furniture, cabinetry, and architectural timber details for homes and commercial spaces that deserve more than off-the-shelf.
